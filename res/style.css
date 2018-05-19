@@ -69,3 +69,59 @@ ul li a:hover {
     display: inline-block;
     
 }
+/* END OF HEADER AND HERO SECTION */
+.salespoints{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+.salespoint img {
+   width: 3.5rem;
+}
+.salespoint {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 2rem;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    
+}
+.salespoint h3 {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.more-info {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    
+}
+
+.info-contain {
+    width: 30%;
+   
+    
+}
+.title{
+    background: cadetblue;
+    display: flex;
+    width: 70%;
+    height: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.info-contain h2 {
+    font-size: 1rem;
+    
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    width: 30%;
+    
+}
+
+/* END OF MAIN SECTION */
