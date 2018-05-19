@@ -125,3 +125,18 @@ ul li a:hover {
 }
 
 /* END OF MAIN SECTION */
+footer {
+    display: flex;
+    height: 10rem;
+    background:rgb(215, 248, 250);
+    width: 100%;
+    align-items: center;
+    padding-left: 5rem;
+    margin-top: 3rem;
+}
+footer img {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+/* END OF FOOTER */
