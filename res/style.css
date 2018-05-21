@@ -42,6 +42,12 @@ ul li a {
 ul li a:hover {
     color: rgba(250, 224, 224, 0.822);
 }
+.menu {
+    display: none;
+    margin-right: 3rem;
+    color: white;
+    text-decoration: none;
+}
 
 .logo-wrap{
     display: flex;
@@ -70,20 +76,39 @@ ul li a:hover {
    .hero-text h1 {
        font-size: 1.5rem;
    }
-   
+   .menu {
+       display: block;
+   }
+}
+
+@media only screen and (max-width: 500px){
+    .logo-title {
+        display: none;
+
+    }
 }
 .hero-text {
     position: relative;
     top: 5rem;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
 .hero-text h1{
     letter-spacing: 0.1rem;
     padding: 2rem 3rem;
     background: white;
-    display: inline-block;
+    display: flex;
+    width: 25rem;
+    justify-content: center;
     
+}
+@media only screen and (max-width: 370px) {
+    .hero-text h1 {
+        padding: 1rem 2rem;
+        width: 100%;
+        font-size: 1rem;
+    }
 }
 /* END OF HEADER AND HERO SECTION */
 .salespoints{
@@ -149,6 +174,40 @@ ul li a:hover {
     .contain3 {
         display: none;
     }
+    
+}
+@media only screen and (max-width: 445px) {
+    .salespoints {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .salespoint {
+        margin-bottom: 2rem;
+    }
+    .salespoint h3 {
+       text-align: center;
+        margin-top: 0;
+    }
+    .info-contain {
+        width: 100%;
+    }
+    .more-info {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+    }
+    .info-text {
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
 /* END OF MAIN SECTION */
@@ -161,14 +220,37 @@ footer {
     padding-left: 5rem;
     margin-top: 3rem;
 }
+.footer-logo {
+    display: flex;
+}
 footer img {
     height: 1.5rem;
     margin-right: 1rem;
 }
-footer .footer-logo {}
+
 @media only screen and (max-width: 635px) {
     footer {
         height: 7rem;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .footer-text {
+        display: none;
+    }
+    .footer-logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+        
+    }
+    footer {
+        padding:0;
+    }
+    .footer-logo img {
+        margin: 0;
+        height: 2rem;
     }
 }
 
