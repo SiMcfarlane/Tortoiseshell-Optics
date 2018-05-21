@@ -27,13 +27,17 @@ ul {
     background: cadetblue;
     list-style: none;
     justify-content: space-between;
+    align-items: center;
 }
 ul li {
     padding: 0 1.3rem;
+    display: flex;
+
 }
 ul li a {
     text-decoration: none;
     color: white;
+    display: block;
 }
 ul li a:hover {
     color: rgba(250, 224, 224, 0.822);
@@ -54,7 +58,19 @@ ul li a:hover {
     display: flex;
     height: 100%;
     align-items: center;
-    margin-right: 1rem;
+   
+}
+@media only screen and (max-width: 635px) {
+   .nav-items {
+       display: none;
+   }
+   ul{
+       height: 3rem;
+   }
+   .hero-text h1 {
+       font-size: 1.5rem;
+   }
+   
 }
 .hero-text {
     position: relative;
@@ -97,8 +113,9 @@ ul li a:hover {
 }
 .more-info {
     display: flex;
-    margin-top: 3rem;
     justify-content: space-between;
+    width: 90%;
+    margin: 3rem auto;
     
 }
 
@@ -108,9 +125,10 @@ ul li a:hover {
     
 }
 .title{
+    text-align: left;
     background: cadetblue;
     display: flex;
-    width: 70%;
+    width: 10rem;
     height: 2rem;
     color: white;
     margin-bottom: 1rem;
@@ -120,15 +138,24 @@ ul li a:hover {
     
     text-transform: uppercase;
     padding: 0.5rem 1rem;
-    width: 30%;
     
+    
+}
+@media only screen and (max-width: 635px) {
+    .info-contain {
+        width: 45%;
+        
+    }
+    .contain3 {
+        display: none;
+    }
 }
 
 /* END OF MAIN SECTION */
 footer {
     display: flex;
     height: 10rem;
-    background:rgb(215, 248, 250);
+    background:rgb(192, 224, 226);
     width: 100%;
     align-items: center;
     padding-left: 5rem;
@@ -137,6 +164,12 @@ footer {
 footer img {
     height: 1.5rem;
     margin-right: 1rem;
+}
+footer .footer-logo {}
+@media only screen and (max-width: 635px) {
+    footer {
+        height: 7rem;
+    }
 }
 
 /* END OF FOOTER */
